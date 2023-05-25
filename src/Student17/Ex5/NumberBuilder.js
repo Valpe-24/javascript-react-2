@@ -11,10 +11,15 @@ export const NumberBuilder = () => {
 
     }
 
+    const reset =() => {
+      setNumberString('');
+      setCounter(0)
+    }
+
   return (
     <div>
         <button onClick= {() => stringOfNumbers()}>Add Number</button>
-        <button onClick={() => setNumberString('')}>Reset</button>
+        <button onClick={() => reset()}>Reset</button>
         <br />
         Number: {numberString}
     </div>
